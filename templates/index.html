@@ -24,13 +24,13 @@
                                 </form>
                             </li>
                             <li class="nav-item">
-                                <a href="messages/messages.html" class="nav-link nav-icon nav-links message-drop drop-w-tooltip" data-placement="bottom" data-title="Messages">
+                                <a href="#" class="nav-link nav-icon nav-links message-drop drop-w-tooltip" data-placement="bottom" data-title="Messages">
                                     <img src="{% static 'images/icons/navbar/message.png' %}" class="message-dropdown f-nav-icon" alt="navbar icon">
                                 </a>
                             </li>
                         </ul>
                         <ul class="navbar-nav mr-5 flex-row" id="main_menu">
-                            <a class="navbar-brand nav-item mr-lg-5" href="index.html"><img src="{% static 'images/logo-64x64.png' %}" width="120" height="40" class="mr-3" alt="Logo"></a>
+                            <a class="navbar-brand nav-item mr-lg-5" href="{% url 'index' %}"><img src="{% static 'images/logo-64x64.png' %}" width="120" height="40" class="mr-3" alt="Logo"></a>
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <form class="w-30 mx-2 my-auto d-inline form-inline mr-5 dropdown search-form">
                                 <div class="input-group" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchDropdown">
@@ -227,7 +227,7 @@
                                         </li>
                                     </div>
                                     <div class="notify-drop-footer text-center">
-                                        <a href="#">See More</a>
+                                        <a href="{% url 'messages' %}">See More</a>
                                     </div>
                                 </ul>
                             </li>
@@ -361,7 +361,7 @@
                                 </div>
                             </li>
                             <li class="nav-item s-nav">
-                                <a href="profile.html" class="nav-link nav-links">
+                                <a href="{% url 'userprofile' %}" class="nav-link nav-links">
                                     <div class="menu-user-image">
                                         <img src="{% static 'images/users/user-4.jpg' %}" class="menu-user-img ml-1" alt="Menu Image">
                                     </div>
@@ -378,7 +378,7 @@
                                             <div class="handle"></div>
                                         </button>
                                     </a>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="{% url 'settings' %}">
                                         <img src="{% static 'images/icons/navbar/gear-1.png' %}" alt="Navbar icon"> Settings</a>
                                     <a class="dropdown-item logout-btn" href="#">
                                         <img src="{% static 'images/icons/navbar/logout.png' %}" alt="Navbar icon"> Log Out</a>
@@ -419,11 +419,11 @@
                     <div class="col-md-6 second-section" id="page-content-wrapper">
                         <div class="mb-3">
                             <div class="btn-group d-flex">
-                                <a href="index.html" class="btn btn-quick-links mr-3 ql-active">
+                                <a href="{% url 'index' %}" class="btn btn-quick-links mr-3 ql-active">
                                     <img src="{% static 'images/icons/theme/speech.png' %}" class="mr-2" alt="quick links icon">
                                     <span class="fs-8">Speech</span>
                                 </a>
-                                <a href="messages.html" class="btn btn-quick-links mr-3">
+                                <a href="{% url 'messages' %}" class="btn btn-quick-links mr-3">
                                     <img src="{% static 'images/icons/theme/listen.png' %}" class="mr-2" alt="quick links icon">
                                     <span class="fs-8">Listen</span>
                                 </a>
