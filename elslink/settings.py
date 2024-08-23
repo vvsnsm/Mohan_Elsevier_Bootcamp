@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     "index",
     "userprofile",
     "settings",
+    "groups",
+    "friends",
 ]
 
 MIDDLEWARE = [

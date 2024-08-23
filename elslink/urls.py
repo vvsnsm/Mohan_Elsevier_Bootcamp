@@ -24,5 +24,7 @@ urlpatterns = [
     path('',include('index.urls')),
     path('messages/',include('msgs.urls')),
     path('userprofile/',include('userprofile.urls')),
-    path('settings/',include('settings.urls'))
+    path('settings/',include('settings.urls')),
+    path('groups/',include('groups.urls')),
+    path('friends/',include('friends.urls'))
 ]
