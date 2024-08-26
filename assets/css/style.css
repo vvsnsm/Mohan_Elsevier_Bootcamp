@@ -9,7 +9,9 @@
 *::before {
     box-sizing: border-box;
 }
-
+.custom-color {
+    background-color: #ff7300;
+}
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
@@ -242,7 +244,7 @@ button:focus {
 }
 
 .newsfeed-left-sidebar li.sd-active {
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #ff7300;
     background-color: #f6f6f6
 }
 
@@ -486,7 +488,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .ql-active {
-    background-color: #007bff;
+    background-color: #ff7300;
     color: #fff;
 }
 
@@ -715,7 +717,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contacts .media img {
-    border: 1px solid #007bff;
+    border: 1px solid #ff7300;
     border-radius: 50%;
     padding: 2px;
     width: 40px;
@@ -1324,7 +1326,7 @@ img.settings-icon {
     display: block;
     position: absolute;
     border: 50%;
-    border: 1px solid #007bff;
+    border: 1px solid #ff7300;
     left: -20px;
     right: -20px;
     top: -20px;
@@ -1345,9 +1347,9 @@ img.settings-icon {
 }
 
 .call-btn {
-    border: 1px solid #007bff;
+    border: 1px solid #ff7300;
     border-radius: 50%;
-    color: #007bff;
+    color: #ff7300;
     font-size: 1.5rem;
 }
 
@@ -1430,7 +1432,7 @@ img.settings-icon {
     display: block;
     position: absolute;
     border: 50%;
-    border: 5px solid #007bff;
+    border: 5px solid #ff7300;
     left: -85px;
     right: 85px;
     top: -80px;

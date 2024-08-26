@@ -18,11 +18,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from . import views
-
+from django.conf.urls.static import static
+from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('index.urls')),
     path('messages/',include('msgs.urls')),
     path('userprofile/',include('userprofile.urls')),
-    path('settings/',include('settings.urls'))
-]
+    path('settings/',include('settings.urls')),
+    path('groups/',include('groups.urls')),
+    path('friends/',include('friends.urls'))
+]+ static (settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
